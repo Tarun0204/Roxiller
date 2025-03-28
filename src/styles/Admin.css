@@ -1,0 +1,172 @@
+.dashboard-container {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.logout-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dashboard-summary,
+.dashboard-actions,
+.dashboard-filter {
+  margin: 20px 0;
+}
+
+button {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-user-btn,
+.add-store-btn {
+  background: green;
+  color: white;
+}
+
+.update-btn {
+  background: goldenrod;
+  color: white;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.table th {
+  background: #f1f5f9;
+  color: black;
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.ReactModal__Content {
+  max-width: 400px;
+  height: 45vh;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    gap: 10px;
+    padding-bottom: 15px;
+  }
+
+  .dashboard-title {
+    font-size: 18px;
+  }
+
+  .ReactModal__Content {
+    height: 55vh;
+  }
+
+  .logout-btn {
+    margin-top: 10px;
+  }
+
+  .dashboard-actions,
+  .dashboard-filter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+.users-list-container,
+.stores-list-container {
+  margin-top: 20px;
+}
+
+.admin-modals {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.admin-modals h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.admin-modals input,
+.admin-modals select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.admin-modals select {
+  cursor: pointer;
+}
+
+.admin-modals button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+
+.update-btn {
+  background: goldenrod;
+}
+
+.update-btn:hover {
+  background: darkgoldenrod;
+}
+
+.star-rating {
+  display: flex;
+  justify-content: space-evenly;
+}
